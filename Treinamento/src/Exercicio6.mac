@@ -1,0 +1,15 @@
+ROUTINE Exercicio6
+Exercicio6	;
+	;
+	Read !,"Data : ",dat
+	If dat="" Quit
+	Set dati=$ZDateH(dat,4)
+	Write !,"Data Interna - ",dati
+	Write !,"Data Islamico - ",$ZD(dati,18)
+	Write !,"Mês Islâmico - ",$p($Zd(dati,18)," ",2)
+	;
+	Read !,"Nome: ",nom
+	Set nom1=$Length($Translate(nom," "))
+	Write !,"A quantidade de caracteres do '",nom,"' sem espaços ', é igual a: ",nom1
+	Set nom1=$Length($Translate(nom," ","|"))
+	;	
