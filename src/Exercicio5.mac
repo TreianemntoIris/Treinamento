@@ -1,0 +1,22 @@
+ROUTINE Exercicio5
+Exercicio5	; Criar uma rotina para ler os dados cadastrais de um aluno
+			; Matricula, nome Completo, Telefone, Data Nascimento e Sexo
+			R !,"Matricula: ",mat
+			R !,"Nome : ",nom
+			R !,"Fone : ",fon
+			R !,"Data : ",data
+			R !,"Sexo : ",sexo
+			;
+			Set U="^"
+			s ^Aluno(mat)=nom_U_fon_U_data_U_sexo
+			w !,"Armazenamento Concluido."
+			;
+#;			s r0=""
+#;			For {
+#;				s r0=$o(^tAluno(r0)),r1="" q:r0=""
+#;				For {
+#;					s r1=$o(^tAluno(r0,r1),1,reg) q:r1=""
+#;					w !,r0," - ",r1," - ",reg
+#;				}
+#;			}
+			

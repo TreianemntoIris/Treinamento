@@ -1,0 +1,36 @@
+ROUTINE Exercicio3
+Exercicio3	; Esercicio 3
+	Read !,"Num 1 : ",num1
+	Read !,"Num 2 : ",num2
+	Read !,"Num 3 : ",num3
+	;
+	Write !,"Exercicio 1"
+	Set T=0
+	For num=num1:1:num2 {
+		Set res=num#11
+		If res=5 {
+			Write !,num
+			Set T=T+1
+		}
+	}
+	Write !,"O total de números / 5 é = 0 :",T
+	;
+	Write !,"Exercicio 2"
+	Set T=0
+	For num=num2:1:num3 {
+		Set res=num#3
+		If res=0 {
+			Write !,num
+			Set T=T+1
+		}
+	}
+	Write !,"Numero de Vezes : ",T
+	;
+	Write !,"Exercicio 3"
+	; Soma dos numeros entre num1 e num2
+	Set T=0,soma=""
+	For num=num1:1:num2 {
+		Set soma=soma+num
+	}
+	Write !,"A Soma dos numeros entre num1 e num2 é igual = ",soma
+	;
