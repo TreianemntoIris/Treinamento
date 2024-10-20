@@ -1,9 +1,7 @@
 /// Definição da Classe
 Class Treinamento.Data.Curso Extends (%Persistent, %XML.Adaptor)
 {
-
 // Propriedade Nome
-
 Property Nome As %String(MAXLEN = 300) [ SqlColumnNumber = 2 ];
 
 Property Preco As %Numeric [ SqlColumnNumber = 3 ];
